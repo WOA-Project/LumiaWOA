@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lumia WOA Project</title>
+    <link>https://woa-project.github.io/LumiaWOA/</link>
+    <description>Recent content on Lumia WOA Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 The Lumia WOA Authors</copyright>
+    
+	<atom:link href="https://woa-project.github.io/LumiaWOA/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Status</title>
+      <link>https://woa-project.github.io/LumiaWOA/status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://woa-project.github.io/LumiaWOA/status/</guid>
+      <description>Global Progress  72%   72%      Feature Device     USB-C Drivers Lumia 950 / Lumia 950 XL   Windows 10 Manganese support (20H2+) UEFI Lumia 950 / Lumia 950 XL / RX-130   Transitioning to Software Components Driver INFs/Setup experience Lumia 950 / Lumia 950 XL / RX-130   Default USB configuration Configuration INFs Lumia 950 / Lumia 950 XL / RX-130   Processor management for PEP Driver patching Lumia 950   Hypervisor support for Windows 10 UEFI Lumia 950 / Lumia 950 XL / RX-130   Processor parking UEFI Lumia 950 / Lumia 950 XL / RX-130     Lumia 950 XLCityman  72%   72%      Feature Description Working state     Wireless Wi-Fi 2.</description>
+    </item>
+    
+  </channel>
+</rss>
