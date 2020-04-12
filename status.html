@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WOA Project</title>
+
+    <link rel="stylesheet" href="./css/winstrap.min.css">
+    <script src="./js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/directorylister.js"></script>
+    <!--[if lt IE 9]>
+        <script src="./js/vendor/html5shiv.min.js"></script>
+        <script src="./js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="navbar-local color-accent theme-dark">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="glyph glyph-hamburger"></i>
+                    </button>
+
+                    <a href="index.html" class="navbar-brand">
+                        WOA Project
+                    </a>
+
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="status.html" role="button" aria-expanded="false">Status</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-24 col-sm-16">
+                    <h2><span class="color-type-primary">LumiaWOA</span></h2>
+                    <div class="type-sh2">It's full Windows 10 for the Lumia!</div>
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <div id="page-content" class="container">
+        
+		<div class="row">
+
+            <div class="type-h2">
+                Status
+            </div>
+
+			<h2></h2>
+			
+            <div class="type-h3">
+                Ongoing work items
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th class="text-right">Device</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>USB C <span class="badge">Drivers</span></td>
+                            <td class="text-right">Lumia 950 / Lumia 950 XL</td>
+                        </tr>
+                        <tr>
+                            <td>Windows 10 Manganese support (20H2+) <span class="badge">UEFI</span></td>
+                            <td class="text-right">Lumia 950 / Lumia 950 XL / RX-130</td>
+                        </tr>
+                        <tr>
+                            <td>Transitioning to Software Components <span class="badge">Driver infs / Setup experience</span></td>
+                            <td class="text-right">Lumia 950 / Lumia 950 XL / RX-130</td>
+                        </tr>
+                        <tr>
+                            <td>Default USB configuration <span class="badge">Configuration infs</span></td>
+                            <td class="text-right">Lumia 950 / Lumia 950 XL / RX-130</td>
+                        </tr>
+                        <tr>
+                            <td>Processor management for PEP <span class="badge">Driver patching</span></td>
+                            <td class="text-right">Lumia 950</td>
+                        </tr>
+                        <tr>
+                            <td>Hypervisor support for Windows 10 <span class="badge">UEFI</span></td>
+                            <td class="text-right">Lumia 950 / Lumia 950 XL / RX-130</td>
+                        </tr>
+                        <tr>
+                            <td>Processor parking <span class="badge">UEFI</span></td>
+                            <td class="text-right">Lumia 950 / Lumia 950 XL / RX-130</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="type-h3">
+                Global progress (3 devices)
+            </div>
+
+            <div class="type-h4">
+                Progress: 72%
+            </div>
+			
+			<div class="progress" style="margin: 12px 0 0 0;">
+				<div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%; top: -12px">
+					<span class="sr-only">72%</span>
+				</div>
+			</div>
+
+			<h2></h2>
+			
+			
+            <div class="type-h3">
+                Lumia 950 XL (Cityman)
+            </div>
+
+            <div class="type-h4">
+                Progress: 72%
+            </div>
+			
+			<div class="progress" style="margin: 12px 0 0 0;">
+				<div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%; top: -12px">
+					<span class="sr-only">72%</span>
+				</div>
+			</div>
+
+			<h2></h2>
+			
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Reason</th>
+                            <th class="text-right">Working state</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>WLAN</td>
+                            <td>WiFi 2.4Ghz and 5Ghz</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Touch</td>
+                            <td>10 fingers max, right click support</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>GPS</td>
+                            <td>Requires an internet connection to download maps data on first run</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Miracast</td>
+                            <td>Receiving content, projecting content</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Bluetooth</td>
+                            <td>Random disconnections may happen, Windows issue</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>NFC</td>
+                            <td>Reading, writing</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>SD Card slot</td>
+                            <td>Max speed: HS400</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>eMMC</td>
+                            <td>All brands including Samsung</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Battery</td>
+                            <td>Charging, readings</td>
+                            <td class="text-right">Working (May require to use a traditional usb cable plugged in to a computer for charging)</td>
+                        </tr>
+                        <tr>
+                            <td>Side buttons</td>
+                            <td>Volume control, lock/unlock/power off, camera</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>SoC Cores</td>
+                            <td>All 8 cores (A53 and A57)</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Display panel</td>
+                            <td>Brightness control, color accuracy</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Audio</td>
+                            <td>Speakers, microphones</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Sensors</td>
+                            <td>Gyrometer, Accelerometer, Ambient light sensor</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>USB C</td>
+                            <td>UC120 support is work in progress. Detection of cable type can be hit and miss.</td>
+                            <td class="text-right">Partially working</td>
+                        </tr>
+                        <tr>
+                            <td>Cellular</td>
+                            <td>EDGE, GSM, CDMA, HSDPA, LTE. No VoLTE support. Call, Texts and Cellular Data fully working on Windows 10 18363 and lower. For versions higher, Cellular Data works only but can be tricky to activate. Dual SIM devices may require an APN to be specified.</td>
+                            <td class="text-right">Partially working</td>
+                        </tr>
+                        <tr>
+                            <td>GPU</td>
+                            <td>ARM64, ARM32 Direct X support only for now</td>
+                            <td class="text-right">Partially working (Artifacts may show up due to exceptions thrown in the DirextX User Mode compilers)</td>
+                        </tr>
+                        <tr>
+                            <td>Connected standby</td>
+                            <td>S0 Network connected state</td>
+                            <td class="text-right">Partially working (WLAN Network adapter disconnects when the device is locked)</td>
+                        </tr>
+                        <tr>
+                            <td>HDMI out</td>
+                            <td>Requires USB C to be working</td>
+                            <td class="text-right">Not working</td>
+                        </tr>
+                        <tr>
+                            <td>Cameras</td>
+                            <td>No drivers</td>
+                            <td class="text-right">Not working</td>
+                        </tr>
+                        <tr>
+                            <td>Windows Hello Face unlock</td>
+                            <td>No drivers (requires Cameras to be working)</td>
+                            <td class="text-right">Not working</td>
+                        </tr>
+                        <tr>
+                            <td>Hyper-V</td>
+                            <td>No firmware support</td>
+                            <td class="text-right">Not working</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="type-h3">
+                Lumia 950 (Talkman)
+            </div>
+
+            <div class="type-h4">
+                Progress: 70%
+            </div>
+			
+			<div class="progress" style="margin: 12px 0 0 0;">
+				<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%; top: -12px">
+					<span class="sr-only">70%</span>
+				</div>
+			</div>
+
+			<h2></h2>
+			
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Reason</th>
+                            <th class="text-right">Working state</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>WLAN</td>
+                            <td>WiFi 2.4Ghz and 5Ghz</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Touch</td>
+                            <td>10 fingers max, right click support</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>GPS</td>
+                            <td>Requires an internet connection to download maps data on first run</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Miracast</td>
+                            <td>Receiving content, projecting content</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Bluetooth</td>
+                            <td>Random disconnections may happen, Windows issue</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>NFC</td>
+                            <td>Reading, writing</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>SD Card slot</td>
+                            <td>Max speed: HS400</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>eMMC</td>
+                            <td>All brands including Samsung</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Battery</td>
+                            <td>Charging, readings</td>
+                            <td class="text-right">Working (May require to use a traditional usb cable plugged in to a computer for charging)</td>
+                        </tr>
+                        <tr>
+                            <td>Side buttons</td>
+                            <td>Volume control, lock/unlock/power off, camera</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Display panel</td>
+                            <td>Brightness control, color accuracy</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Audio</td>
+                            <td>Speakers, microphones</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Sensors</td>
+                            <td>Gyrometer, Accelerometer, Ambient light sensor</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>SoC Cores</td>
+                            <td>All 6 cores (A53 and A57)</td>
+                            <td class="text-right">Partially working (Processor management is broken, so only the 4 A53 cores are working, but locked to 763Mhz)</td>
+                        </tr>
+                        <tr>
+                            <td>USB C</td>
+                            <td>UC120 support is work in progress. Detection of cable type can be hit and miss.</td>
+                            <td class="text-right">Partially working</td>
+                        </tr>
+                        <tr>
+                            <td>Cellular</td>
+                            <td>EDGE, GSM, CDMA, HSDPA, LTE. No VoLTE support. Call, Texts and Cellular Data fully working on Windows 10 18363 and lower. For versions higher, Cellular Data works only but can be tricky to activate. Dual SIM devices may require an APN to be specified.</td>
+                            <td class="text-right">Partially working</td>
+                        </tr>
+                        <tr>
+                            <td>GPU</td>
+                            <td>ARM64, ARM32 Direct X support only for now</td>
+                            <td class="text-right">Partially working (Artifacts may show up due to exceptions thrown in the DirextX User Mode compilers)</td>
+                        </tr>
+                        <tr>
+                            <td>Connected standby</td>
+                            <td>S0 Network connected state</td>
+                            <td class="text-right">Partially working (WLAN Network adapter disconnects when the device is locked)</td>
+                        </tr>
+                        <tr>
+                            <td>HDMI out</td>
+                            <td>Requires USB C to be working</td>
+                            <td class="text-right">Not working</td>
+                        </tr>
+                        <tr>
+                            <td>Cameras</td>
+                            <td>No drivers</td>
+                            <td class="text-right">Not working</td>
+                        </tr>
+                        <tr>
+                            <td>Windows Hello Face unlock</td>
+                            <td>No drivers (requires Cameras to be working)</td>
+                            <td class="text-right">Not working</td>
+                        </tr>
+                        <tr>
+                            <td>Hyper-V</td>
+                            <td>No firmware support</td>
+                            <td class="text-right">Not working</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="type-h3">
+                Microsoft Hapanero EB2+ (RX-130)
+            </div>
+
+            <div class="type-h4">
+                Progress: 76%
+            </div>
+			
+			<div class="progress" style="margin: 12px 0 0 0;">
+				<div class="progress-bar" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" style="width: 76%; top: -12px">
+					<span class="sr-only">76%</span>
+				</div>
+			</div>
+
+			<h2></h2>
+			
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Reason</th>
+                            <th class="text-right">Working state</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>WLAN</td>
+                            <td>WiFi 2.4Ghz and 5Ghz</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Touch</td>
+                            <td>10 fingers max, right click support</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>GPS</td>
+                            <td>Requires an internet connection to download maps data on first run</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Miracast</td>
+                            <td>Receiving content, projecting content</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Bluetooth</td>
+                            <td>Random disconnections may happen, Windows issue</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>NFC</td>
+                            <td>Reading, writing</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>SD Card slot</td>
+                            <td>Max speed: HS400</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>eMMC</td>
+                            <td>All brands including Samsung</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Battery</td>
+                            <td>Charging, readings</td>
+                            <td class="text-right">Working (May require to use a traditional usb cable plugged in to a computer for charging)</td>
+                        </tr>
+                        <tr>
+                            <td>Side buttons</td>
+                            <td>Volume control, lock/unlock/power off, camera</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>SoC Cores</td>
+                            <td>All 8 cores (A53 and A57)</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Display panel</td>
+                            <td>Brightness control, color accuracy</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Audio</td>
+                            <td>Speakers, microphones</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>Sensors</td>
+                            <td>Gyrometer, Accelerometer, Ambient light sensor</td>
+                            <td class="text-right">Working</td>
+                        </tr>
+                        <tr>
+                            <td>USB</td>
+                            <td>Plug detection, USB host/guest</td>
+                            <td class="text-right">Partially working (Driver only works on 17134 and lower)</td>
+                        </tr>
+                        <tr>
+                            <td>Cellular</td>
+                            <td>EDGE, GSM, CDMA, HSDPA, LTE. No VoLTE support. Call, Texts and Cellular Data fully working on Windows 10 18363 and lower. For versions higher, Cellular Data works only but can be tricky to activate. Dual SIM devices may require an APN to be specified.</td>
+                            <td class="text-right">Partially working</td>
+                        </tr>
+                        <tr>
+                            <td>GPU</td>
+                            <td>ARM64, ARM32 Direct X support only for now</td>
+                            <td class="text-right">Partially working (Artifacts may show up due to exceptions thrown in the DirextX User Mode compilers)</td>
+                        </tr>
+                        <tr>
+                            <td>Connected standby</td>
+                            <td>S0 Network connected state</td>
+                            <td class="text-right">Partially working (WLAN Network adapter disconnects when the device is locked)</td>
+                        </tr>
+                        <tr>
+                            <td>Cameras</td>
+                            <td>No drivers</td>
+                            <td class="text-right">Not working</td>
+                        </tr>
+                        <tr>
+                            <td>Windows Hello Fingerprint unlock</td>
+                            <td>No drivers</td>
+                            <td class="text-right">Not working</td>
+                        </tr>
+                        <tr>
+                            <td>Hyper-V</td>
+                            <td>No firmware support</td>
+                            <td class="text-right">Not working</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+		
+		<h2></h2>
+		
+		<div class="type-t9">
+			Snapdragon is a registered trademark of Qualcomm Inc.
+			Windows is a registered trademark of Microsoft Corp.
+			Microsoft Mobile and Lumia are registered trademarks of a now defunct company (Microsoft Mobile Oy)
+			Other binaries may be copyright Qualcomm Inc. and Microsoft Mobile.
+			Hello from San Francisco (US), France, Italy, Germany, Spain, Hungary
+		</div>
+		
+		<h2></h2>
+    </div>
+
+    <a href="#top" class="back-to-top">
+        <i class="glyph glyph-up"></i>
+        <span class="sr-only">Back to top</span>
+    </a>
+
+    <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

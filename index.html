@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WOA Project</title>
+
+    <link rel="stylesheet" href="./css/winstrap.min.css">
+    <script src="./js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/directorylister.js"></script>
+    <!--[if lt IE 9]>
+        <script src="./js/vendor/html5shiv.min.js"></script>
+        <script src="./js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="navbar-local color-accent theme-dark">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="glyph glyph-hamburger"></i>
+                    </button>
+
+                    <a href="index.html" class="navbar-brand">
+                        WOA Project
+                    </a>
+
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="status.html" role="button" aria-expanded="false">Status</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-24 col-sm-16">
+                    <h2><span class="color-type-primary">LumiaWOA</span></h2>
+                    <div class="type-sh2">It's full Windows 10 for the Lumia!</div>
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <div style="max-height: 840px">
+                    <img src="images/real_life_phones.jpg" style="width: 100%" alt="Lumia 950s">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Windows 10 on ARM for Lumias</h5>
+                    <p>Full Windows 10 Desktop for the Lumia 950 and Lumia 950 XL</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="jumbotron theme-dark" style="background-color: red">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-push-12">
+                    <div class="type-h3">
+                        Caution
+                    </div>
+                    <div class="type-sh3">
+                        Experimental firmwares ahead
+                    </div>
+                    <p>The firmwares provided are for testing purposes only. We can't be responsible for any data loss caused by those firmware images. Make backups of your data prior to installing. This software has not been approved for use with emergency services. By installing this software you agree to not use it as your primary phone device due to possible disruption in emergency service access.</p>
+                </div>
+                <div class="col-md-12 col-md-pull-12 text-center">
+                    <span class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block visible-xl-inline-block glyph glyph-warning" style="font-size: 375px"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron theme-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-push-12">
+                    <img src="images/Desktop.png" style="width: 100%" alt="Lumia 950 XL with the Windows Desktop">
+                </div>
+                <div class="col-md-12 col-md-pull-12">
+                    <div class="type-h3">
+                        It's the traditional Windows, you know and love...
+                    </div>
+                    <p>This project ports the Windows 10 Desktop operating system to the Lumia 950 and Lumia 950 XL. It is the same edition of Windows 10 you're used to on your traditional laptop or desktop computer, but it's the version for ARM64 (armv8a) processors. It can run ARM64, ARM and x86 applications (the later via emulation) just fine.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="jumbotron theme-light">
+        <div class="container">
+			<div class="text-center">
+                <img class="mx-auto" src="images/phone_continuum.png" style="height: 800px" alt="RX-130 main phone display in continuum">
+            </div>
+            <div class="text-center">
+                 <div class="type-h3">
+                    ...with Continuum*
+                </div>
+                <p>*Continuum can only be used via Miracast currently.</p>
+            </div>
+			<div class="type-h3">
+
+            </div>
+			<div class="text-center">
+                <img class="mx-auto" src="images/desktop_continuum.png" style="width: 100%" alt="Continuum Desktop via miracast">
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron theme-dark">
+        <div class="container">
+            <div class="text-center">
+                <img class="mx-auto" src="images/MobilePortrait.png" style="height: 800px" alt="Lumia 950 XL with the Windows Desktop using a Mobile Shell">
+            </div>
+            <div class="type-h3">
+                ...but with a mobile twist.
+            </div>
+            <p>Mobile Shell is a fully featured adaptive shell aiming to mimic the Windows 10 Mobile appearance. MobileShell brings back the navigation bar and the status bar, puts your notification toasts at the top, status icons at a glance, and activates only when the phone is in tablet mode.</p>
+            <div class="type-h3">
+
+            </div>
+            <div class="text-center">
+                <img class="mx-auto" src="images/MobileLandscape.png" style="width: 100%" alt="Lumia 950 XL with the Windows Desktop using a Mobile Shell">
+            </div>
+            <p>Mobile Shell also supports landscape mode, and adjusts perfectly to the phone current state. Mobile Shell is made by @ADeltaX and is not included by default, but can be gotten manually from the link below.</p>
+            <div class="btn-group">
+                <a class="btn btn-primary" href="https://www.microsoft.com/p/mobileshell/9pjjrrfmg383">Get Mobile Shell from the Microsoft Store</a>
+                <a class="btn btn-secondary" href="https://github.com/ADeltaX/MobileShell">View on Github</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron theme-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-push-12 text-center">
+                    <img src="images/Dialer.png" style="max-height: 800px;" alt="Lumia 950 with the Dialer application open">
+                </div>
+                <div class="col-md-12 col-md-pull-12">
+                    <div class="type-h3">
+                        With call capabilities*
+                    </div>
+                    <p>This project backports the Cellular stack from Windows 10 Mobile to Windows 10 Desktop. On supported versions of Windows, you can make calls, texts, browse the internet via cellular. WOA Dialer is an application allowing you to make and manage calls on your device. WOA Dialer is bundled with the project by default, along with the classic Microsoft Phone application.</p>
+                    <div class="btn-group">
+                        <a class="btn btn-primary" href="https://github.com/WOA-Project/woadialer">View WOA Dialer on Github</a>
+                    </div>
+                    <p>* Cellular support is still unfinished and might be broken in some areas. Cellular Calls and Cellular Texts are supported up to Windows 10 Build 18363. Versions higher than build 18363 will only support Cellular Data. Dual SIM devices may have issues fetching the default Carrier APN settings, a provisioning package for APN may be required. The advanced settings page for Cellular in the Windows Settings app may crash. Experience may varies with Carriers and devices. This software stack has not been approved for use with emergency services. As a consequence it should not be used as your primary way of communication. VoLTE (IMS) stack while present is not functional.</p>
+                    <div class="type-h3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron theme-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-push-12 text-center">
+                    <img src="images/Chat.png" style="max-height: 800px;" alt="Lumia 950 with the Chat application open">
+                </div>
+                <div class="col-md-12 col-md-pull-12">
+                    <div class="type-h3">
+                        ...and text capabilities*
+                    </div>
+                    <p>With the Chat application, you can send and get text messages. MMS messages remain unsupported as of now.</p>
+                    <div class="btn-group">
+                        <a class="btn btn-primary" href="https://github.com/WOA-Project/Chat">View Chat on Github</a>
+                    </div>
+                    <p>* Cellular support is still unfinished and might be broken in some areas. Cellular Calls and Cellular Texts are supported up to Windows 10 Build 18363. Versions higher than build 18363 will only support Cellular Data. Dual SIM devices may have issues fetching the default Carrier APN settings, a provisioning package for APN may be required. The advanced settings page for Cellular in the Windows Settings app may crash. Experience may varies with Carriers and devices. This software stack has not been approved for use with emergency services. As a consequence it should not be used as your primary way of communication. VoLTE (IMS) stack while present is not functional.</p>
+                    <div class="type-h3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-content" class="container">
+        <div class="type-h3">
+            ...and much more!
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">WOA Deployer</h5>
+                        <p class="card-text">WOA Deployer allows you to deploy with ease Windows 10 Desktop to your device, and enabling Dual Boot with 2 clicks. You can pick the windows release you want, the language you want.</p>
+                        <a href="https://github.com/WOA-Project/WOA-Deployer-Lumia" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">BootShim</h5>
+                        <p class="card-text">BootShim is the UEFI bootstraper. It escalates the SoC to AArch64 and starts our UEFI.</p>
+                        <a href="https://github.com/imbushuo/boot-shim" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-3">
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Lumia950XlPkg</h5>
+                        <p class="card-text">Lumia950XlPkg is our EDK2 port for the Lumia 950 and Lumia 950 XL. It enables us to bootstrap Windows 10 Desktop for ARM64 processors on the Lumia.</p>
+                        <a href="https://github.com/WOA-Project/Lumia950XLPkg" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Lumia Drivers</h5>
+                        <p class="card-text">Lumia Drivers is the repository hosting all driver files for Windows, and INF files which had to be recreated. Some additional driver patching is also done here to make things work the way they should.</p>
+                        <a href="https://github.com/WOA-Project/Lumia-Drivers" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-3">
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Lumia USB C</h5>
+                        <p class="card-text">Lumia USB C is the recreation of the USB C driver for Lumia devices. The Lumia 950 USB C solution is proprietary and personalized, thus the need for a custom driver.</p>
+                        <a href="https://github.com/WOA-Project/LumiaUSBC" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Color Profile</h5>
+                        <p class="card-text">Color Profile is the stack managing the personalization of the display color tint, saturation and contrast.</p>
+                        <a href="https://github.com/WOA-Project/ColorProfile" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-3">
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Advanced Info</h5>
+                        <p class="card-text">Advanced Info displays information about your device, within the settings app.</p>
+                        <a href="https://github.com/WOA-Project/AdvancedInfo" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Airwaves</h5>
+                        <p class="card-text">Airwaves allows you to listen to FM radio, right from your phone.</p>
+                        <a href="https://github.com/tigerw/FM-Radio-Frontend" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-3">
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">RIL Init Service</h5>
+                        <p class="card-text">RIL Init Service allows you to have the Radio Interface Layer initialized on newer versions of Windows 10.</p>
+                        <a href="https://github.com/WOA-Project/RILServiceInit" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Auto Brightness Service</h5>
+                        <p class="card-text">The auto brightness service allows you to have automatic brightness on your device.</p>
+                        <a href="https://github.com/WOA-Project/AutoBrightnessSvc" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-3">
+			<div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Auto Rotation Service</h5>
+                        <p class="card-text">The auto rotation service allows you to have automatic rotation on your device.</p>
+                        <a href="https://github.com/WOA-Project/AutoRotate" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Vibrations</h5>
+                        <p class="card-text">The vibration stack allows you to have haptic vibrations once you get a notification, and control the intensity of the vibration via a settings application.</p>
+                        <a href="https://github.com/WOA-Project/VibrationSettings" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-3">
+			<div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">USB Function Mode Switcher</h5>
+                        <p class="card-text">USB Function Mode Switcher allows you to switch USB function modes.</p>
+                        <a href="https://github.com/WOA-Project/USBFunctionModeSwitcher" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Management Service</h5>
+                        <p class="card-text">The data management service enables cellular data connections automatically.</p>
+                        <a href="https://github.com/WOA-Project/DataManagementSvc" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-3">
+			<div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Power Supply Notifier</h5>
+                        <p class="card-text">Power Supply Notifier plays a sound when your device starts charging.</p>
+                        <a href="https://github.com/WOA-Project/PowerSupplyNotifier" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">SynapticsTouch</h5>
+                        <p class="card-text">The Synaptics Touch driver enables touch on your device.</p>
+                        <a href="https://github.com/imbushuo/SynapticsTouch" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="row row-cols-1 row-cols-md-3">
+			<div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Display Dock Flyout</h5>
+                        <p class="card-text">The Display Dock Flyout displays information about a connected Display Dock (HD-500)</p>
+                        <a href="https://github.com/WOA-Project/DisplayDockFlyout" class="btn btn-primary">View on Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<h2></h2>
+		
+		<div class="type-t9">
+			Snapdragon is a registered trademark of Qualcomm Inc.
+			Windows is a registered trademark of Microsoft Corp.
+			Microsoft Mobile and Lumia are registered trademarks of a now defunct company (Microsoft Mobile Oy)
+			Other binaries may be copyright Qualcomm Inc. and Microsoft Mobile.
+			Hello from San Francisco (US), France, Italy, Germany, Spain, Hungary
+		</div>
+		
+		<h2></h2>
+    </div>
+
+    <a href="#top" class="back-to-top">
+        <i class="glyph glyph-up"></i>
+        <span class="sr-only">Back to top</span>
+    </a>
+
+    <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
