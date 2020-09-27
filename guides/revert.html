@@ -5,14 +5,14 @@
     <meta name="generator" content="Hugo 0.69.0" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <title>Unlock the Bootloader - Lumia WOA Project</title>
+    <title>Revert back to Windows 10 Mobile - Lumia WOA Project</title>
     <link rel="stylesheet"
         href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
     <link rel="stylesheet" href="https://woa-project.github.io/LumiaWOA/css/raster.grid.css" />
     <link rel="stylesheet" href="https://woa-project.github.io/LumiaWOA/css/style.min.css" />
     <meta name="description" content="Full Windows 10 for Lumia">
     <link rel="canonical" href="https://woa-project.github.io/LumiaWOA/">
-    <meta property="og:title" content="Unlock the Bootloader - Lumia WOA Project" />
+    <meta property="og:title" content="Revert back to Windows 10 Mobile - Lumia WOA Project" />
     <meta property="og:description" content="Full Windows 10 for Lumia" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://woa-project.github.io/LumiaWOA/" />
@@ -47,8 +47,8 @@
     <main aria-role="main">
         <div id="hero" class="sect">
             <div>
-                <h1>Unlocking the Bootloader</h1>
-                <h4 class="secondary">This guide will explain the first step into the world of Lumia modding.</h4>
+                <h1>Revert back to Windows 10 Mobile</h1>
+                <h4 class="secondary">Got tired of WOA, or want to start from scratch? We've got you covered!</h4>
             </div>
         </div>
         <div class="hero-sect warning main-breakout">
@@ -58,11 +58,6 @@
                 <p>This guide is an explaination of the correct steps to follow. Errors may still happen, both caused by 
                     the user or by unpredictable conditions on your work machine. We're not resposible for any data loss,
                     soft bricks or permanent damage on the device.</p>
-                <p>The firmware provided is for testing purposes only. We aren't responsible for any data loss caused by
-                    the firmware images. Make backups of your data prior to installing.</p>
-                <p><strong>This software has not been approved for use with emergency services. By installing this
-                    software, you agree to not use it as your primary phone device due to possible disruption in
-                    emergency service access.</strong></p>
             </div>
         </div>
         <div class="hero-sect grey main-breakout">
@@ -76,6 +71,8 @@
                     </ul>
                     <p>Software:</p>
                     <ul>
+                        <li><a href="https://www.wpinternals.net/index.php/downloads">Windows Device Recovery Tool</a></li>
+                        <p>or</p>
                         <li><a href="https://www.wpinternals.net/index.php/downloads">WPInternals</a></li>
                     </ul>
                 </r-cell>
@@ -96,16 +93,15 @@
             </r-grid>
         </div>
         <div class="hero-sect">
+            <h2>Using Windows Device Recovery Tool</h2>
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Let's start by downloading WPInternals. Save it somewhere on your PC, then extract it. 
-                        You might need to disable your antivirus, because it might be flagged as a false positive.
+                        Download and install Windows Device Recovery Tool, or WDRT. It's an official software provided
+                        by Microsoft to restore Lumias to their original state.
                     </p>
                     <p>
-                        Run WPInternals, and you will be greeted by the Getting Started screen. Please take your time
-                        to read through the page. You will be instructed to install dome drivers needed for WPInternals
-                        to work. 
+                        Once launched, the tool will show this page:
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -113,9 +109,9 @@
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="X:\source\LumiaWOA\img\guides\wpinternals_welcome.png" alt="The WPInternals Welcome Page" />
+                                    src="X:\source\LumiaWOA\img\guides\wdrt_welcome.png" alt="The Windows Device Recovery Tool Welcome Page" />
                             </picture>
-                            <noscript><img src="X:\source\LumiaWOA\img\guides\wpinternals_welcome.png"
+                            <noscript><img src="X:\source\LumiaWOA\img\guides\wdrt_welcome.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -124,7 +120,10 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Plug your phone to your PC, and WPInternals should detect it.
+                        Plug your phone to your PC, and WDRT should detect it. In some cases, like some soft brick situations,
+                        it might be needed to reboot the device a few times, or turn it into flash mode. Please make a few tries.
+                        Also try to click "My device was not detected" if you still can't connect the device. Hard bricked devices 
+                        might not be detected, and can't be recovered, so please pay attention while playing with your device.
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
