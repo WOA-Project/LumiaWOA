@@ -65,14 +65,12 @@
                 <r-cell span-s=row>
                     <h2>Prerequisites</h2>
                     <ul>
-                        <li>Lumia 950 (Talkman) or Lumia 950 XL (Cityman) or Hapanero</li>
+                        <li>Lumia 950 (Talkman) or Lumia 950 XL (Cityman)</li>
                         <li>A Windows PC</li>
                         <li>A cable to connect the phone to the PC</li>
                     </ul>
                     <p>Software:</p>
                     <ul>
-                        <li><a href="https://www.wpinternals.net/index.php/downloads">Windows Device Recovery Tool</a></li>
-                        <p>or</p>
                         <li><a href="https://www.wpinternals.net/index.php/downloads">WPInternals</a></li>
                     </ul>
                 </r-cell>
@@ -80,12 +78,12 @@
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/Desktop.webp"
+                                <source srcset="X:/source/LumiaWOA/img/guides/phone_revert.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/Desktop.png" alt="A Lumia 950" />
+                                    src="X:/source/LumiaWOA/img/guides/phone_revert.png" alt="A Lumia 950" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/Desktop.png"
+                            <noscript><img src="X:/source/LumiaWOA/img/guides/phone_revert.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -93,12 +91,12 @@
             </r-grid>
         </div>
         <div class="hero-sect">
-            <h2>Using Windows Device Recovery Tool</h2>
+            <h2>Using WPInternals</h2>
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Download and install Windows Device Recovery Tool, or WDRT. It's an official software provided
-                        by Microsoft to restore Lumias to their original state.
+                        Launch WPInternals. If you haven't installed it already, download it and read the welcome guide that appears
+                        once you open it. You'll need some drivers to make sure it works as expected, so please don't skip it.
                     </p>
                     <p>
                         Once launched, the tool will show this page:
@@ -108,10 +106,12 @@
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
+                                <source srcset="X:/source/LumiaWOA/img/guides/wpinternals_welcome.webp"
+                                    type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="X:\source\LumiaWOA\img\guides\wdrt_welcome.png" alt="The Windows Device Recovery Tool Welcome Page" />
+                                    src="X:/source/LumiaWOA/img/guides/wpinternals_welcome.png" alt="The WPInternals tool Welcome Page" />
                             </picture>
-                            <noscript><img src="X:\source\LumiaWOA\img\guides\wdrt_welcome.png"
+                            <noscript><img src="X:/source/LumiaWOA/img/guides/wpinternals_welcome.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -120,20 +120,76 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Plug your phone to your PC, and WDRT should detect it. In some cases, like some soft brick situations,
-                        it might be needed to reboot the device a few times, or turn it into flash mode. Please make a few tries.
-                        Also try to click "My device was not detected" if you still can't connect the device. Hard bricked devices 
-                        might not be detected, and can't be recovered, so please pay attention while playing with your device.
+                        Go into "Manual Mode" on the left, then press "interrupt the boot-process" button that is included
+                        into the newly appeared page.
+                    </p>
+                    <p>
+                        Plug your phone to your PC, and WPInternals should detect it. In some cases, like some soft brick situations,
+                        it might be needed to reboot the device a few times, so please make a few tries.
+                        You'll see a page listing some informations from your device.
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
+                                <source srcset="X:/source/LumiaWOA/img/guides/wpi_phone_details.webp"
+                                    type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="X:\source\LumiaWOA\img\guides\wpinternals_welcome.png" alt="The WPInternals Welcome Page" />
+                                    src="X:/source/LumiaWOA/img/guides/wpi_phone_details.png" alt="WPInternals showing phone details" />
                             </picture>
-                            <noscript><img src="X:\source\LumiaWOA\img\guides\wpinternals_welcome.png"
+                            <noscript><img src="X:/source/LumiaWOA/img/guides/wpi_phone_details.png"
+                                    class="img-fluid" /></noscript>
+                        </div>
+                    </figure>
+                </r-cell>
+            </r-grid>
+            <r-grid columns=2>
+                <r-cell span-s=row>
+                    <p>
+                        Go into the "Flash" tab, and, under "Flash original FFU", select the correct FFU file for your device and 
+                        start the process. Please don't select custom FFUs here, only FFUs provided by Microsoft.
+                    </p>
+                    <p>
+                        In case you don't have your FFU file, go into the "Download" tab and press the "Download All" button. this
+                        will download every file needed for your device. Once you've downloaded them, go back into the "Flash" tab.
+                    </p>
+                </r-cell>
+                <r-cell span-s=row>
+                    <figure>
+                        <div class="img-wrapper" style="padding-bottom: 52.81%;">
+                            <picture>
+                                <source srcset="X:/source/LumiaWOA/img/guides/wpi_phone_details.webp"
+                                    type="image/webp" />
+                                <img class="lazyload img-fluid" loading="lazy"
+                                    src="X:/source/LumiaWOA/img/guides/wpi_phone_details.png" alt="WPInternals showing phone details" />
+                            </picture>
+                            <noscript><img src="X:/source/LumiaWOA/img/guides/wpi_phone_details.png"
+                                    class="img-fluid" /></noscript>
+                        </div>
+                    </figure>
+                </r-cell>
+            </r-grid>
+            <r-grid columns=2>
+                <r-cell span-s=row>
+                    <p>
+                        WPI will now start and work on your phone. If you did everything correctly, here's what you'll see once it's 
+                        done:
+                    </p>
+                    <p>
+                        And your phone will be booting into Windows Phone again.
+                    </p>
+                </r-cell>
+                <r-cell span-s=row>
+                    <figure>
+                        <div class="img-wrapper" style="padding-bottom: 52.81%;">
+                            <picture>
+                                <source srcset="X:/source/LumiaWOA/img/guides/wpi_flash_done.webp"
+                                    type="image/webp" />
+                                <img class="lazyload img-fluid" loading="lazy"
+                                    src="X:/source/LumiaWOA/img/guides/wpi_flash_done.png" alt="WPInternals showing phone details" />
+                            </picture>
+                            <noscript><img src="X:/source/LumiaWOA/img/guides/wpi_flash_done.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
