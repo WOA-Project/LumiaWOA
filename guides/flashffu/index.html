@@ -53,7 +53,14 @@
         <div id="hero" class="sect">
             <div>
                 <h1>Flash a premade WOA FFU</h1>
-                <h4 class="secondary">This is a fast, but manual way to install WOA on your Lumia</h4>
+                <h4 class="secondary">This is a fast, but manual way to install Windows On ARM on your Lumia</h4>
+                <p>
+                    This guide explains how to flash the FFU files we provide. They are a fast and easy way to get
+                    started and quickly running with Windows On ARM. Assuming you have some terminal knowledge!
+                    We provide FFUs for Windows 10 and 11 (Windows 11 FFUs are coming soon), but you can also flash
+                    the old 10X FFUs if that is what you wish. Just know that 10X has been abandoned by Microsoft,
+                    and support is even worse than Windows 10 Mobile.
+                </p>
             </div>
         </div>
         <div class="hero-sect warning main-breakout">
@@ -78,7 +85,7 @@
                     <p style="font-weight: bold;">The phone bootloader must be unlocked. If you haven't done that already, <a href="https://woa-project.github.io/LumiaWOA/guides/unlock/">please do that from here.</a></p>
                     <p>Files:</p>
                     <ul>
-                        <li>One <a href="https://t.me/LumiaWOA_FFUs">FFU file</a> of your choice, pick the right one for your device.</li>
+                        <li>One <a href="https://t.me/LumiaWOA_FFUs">FFU file</a> of your choice, pick the right one for your device. It can be either a Windows 10, 10X or 11 FFU <br> (Note: Windows 11 FFUs are still not available, and 10X is unsupported).</li>
                         <li>thor2.exe on your PC. You can get it by installing <a href="https://support.microsoft.com/en-us/windows/windows-device-recovery-tool-faq-2b186f06-7178-ed11-4cb6-5ed437f0855b">Windows Device Recovery Tool.</a></li>
                     </ul>
                 </r-cell>
@@ -156,7 +163,7 @@
                 </r-cell>
             </r-grid>
             <p style="margin-top: 10%;">
-                Now CLOSE WPInternals. It needs to be closed, or the next steps will fail for sure. This is 
+                Now <strong>CLOSE WPInternals</strong>. It needs to be closed, or the next steps will fail for sure. This is 
                 important, so don’t leave it running. 
             </p>
             <h2 style="margin-top: 30%;">Flashing the FFU file</h2>
@@ -253,6 +260,10 @@
                         Like this:
                         Press enter, and you'll boot right into Windows on ARM.
                     </p>
+                    <p>
+                        You can also manually reset your device (keep the power button pressed until it reboots) 
+                        but make sure that flashing is done and the phone screen is green.
+                    </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
@@ -269,6 +280,63 @@
                     </figure>
                 </r-cell>
             </r-grid>
+            <div class="expander">
+                <input id="expander" class="toggle" type="checkbox">
+                <label for="expander" class="toggle-label"><i class="ms-Icon smdl2 ms-Icon--ChevronDownMed" aria-hidden="true"></i>I'm getting a PARTITON_NOT_FOUND error</label>
+                <div class="expander-content">
+                    <p>Instead of said command, run</p>
+                    <code>
+                        thor2 -mode uefiflash -ffufile path_to_your_ffu.ffu
+                    </code>
+                </div>
+                <style>
+                    .expander {
+                        right: 10%;
+                        background-color: #ffffff33;
+                        padding: 16px;
+                        margin-bottom: 8px;
+                    }
+                    input.toggle {
+                        display: none;
+                    }
+                    .expander-content {
+                        display: none;
+                    }
+                    .toggle-label {
+                        height: 40px;
+                    }
+                    input.toggle:checked + .toggle-label + .expander-content {
+                        display: block;
+                    }
+                </style>
+            </div>
+            <div class="expander2">
+                <input id="expander2" class="toggle2" type="checkbox">
+                <label for="expander2" class="toggle-label2"><i class="ms-Icon smdl2 ms-Icon--ChevronDownMed" aria-hidden="true"></i>I'm getting a THOR2_ERROR_TO_COMMUNICATE_WITH_DEVICE error</label>
+                <div class="expander-content2">
+                    <p>Told you before! You <strong>need</strong> to close WPInternals :)</p>
+                </div>
+                <style>
+                    .expander2 {
+                        right: 10%;
+                        background-color: #ffffff33;
+                        padding: 16px;
+                        margin-bottom: 8px;
+                    }
+                    input.toggle2 {
+                        display: none;
+                    }
+                    .expander-content2 {
+                        display: none;
+                    }
+                    .toggle-label2 {
+                        height: 40px;
+                    }
+                    input.toggle2:checked + .toggle-label2 + .expander-content2 {
+                        display: block;
+                    }
+                </style>
+            </div>
         </div>
     </main>
 
