@@ -106,6 +106,51 @@
             </r-grid>
         </div>
         <div class="hero-sect">
+            <h2>Before starting...</h2>
+            <div class="expander3">
+                <input id="expander3" class="toggle3" type="checkbox">
+                <label for="expander3" class="toggle-label3"><i class="ms-Icon smdl2 ms-Icon--ChevronDownMed" aria-hidden="true"></i>
+                    I'm flashing a build newer than 18363 and I want phone calls to work
+                </label>
+                <div class="expander-content3">
+                    <p>
+                        You'll need to extract your ICan0 value from an older build than 18363. If you already have it,
+                        then feel free to ignore this box.
+                    </p>
+                    <p>
+                        If you don't have it, flash build 18363 or anything earlier using this same guide or 
+                        <a href="https://woa-project.github.io/LumiaWOA/guides/woadeployer/">the WoaDeployer guide</a>, follow 
+                        <a href="https://woa-project.github.io/LumiaWOA/guides/ican0/">this other guide</a>, 
+                        then come back here and deploy the build of your choice.
+                    </p>
+                    <p>
+                        Read everything before starting!
+                    </p>
+                    <p>
+                        When you're done, don't forget to restore the ICan0 value!
+                    </p>
+                </div>
+                <style>
+                    .expander3 {
+                        right: 10%;
+                        background-color: #ffffff33;
+                        padding: 16px;
+                        margin-bottom: 50px;
+                    }
+                    input.toggle3 {
+                        display: none;
+                    }
+                    .expander-content3 {
+                        display: none;
+                    }
+                    .toggle-label3 {
+                        height: 40px;
+                    }
+                    input.toggle3:checked + .toggle-label3 + .expander-content3 {
+                        display: block;
+                    }
+                </style>
+            </div>
             <h2>Entering Flash Mode</h2>
             <p>
                 Enter flash mode on your phone. Here are the steps needed in WPInternals: 

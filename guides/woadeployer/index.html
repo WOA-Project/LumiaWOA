@@ -99,6 +99,52 @@
             </r-grid>
         </div>
         <div class="hero-sect">
+            <h2>Before starting...</h2>
+            <div class="expander">
+                <input id="expander" class="toggle" type="checkbox">
+                <label for="expander" class="toggle-label"><i class="ms-Icon smdl2 ms-Icon--ChevronDownMed" aria-hidden="true"></i>
+                    I'm deploying a build newer than 18363 and I want phone calls to work
+                </label>
+                <div class="expander-content">
+                    <p>
+                        You'll need to extract your ICan0 value from an older build than 18363. If you already have it,
+                        then feel free to ignore this box.
+                    </p>
+                    <p>
+                        If you don't have it, deploy build 18363 or anything earlier using this same guide or 
+                        <a href="https://woa-project.github.io/LumiaWOA/guides/flashffu/">the FFU flashing guide</a>, follow 
+                        <a href="https://woa-project.github.io/LumiaWOA/guides/ican0/">this other guide</a>, 
+                        then come back here and deploy the build of your choice.
+                    </p>
+                    <p>
+                        Read everything before starting!
+                    </p>
+                    <p>
+                        When you're done, don't forget to restore the ICan0 value!
+                    </p>
+                </div>
+                <style>
+                    .expander {
+                        right: 10%;
+                        background-color: #ffffff33;
+                        padding: 16px;
+                        margin-bottom: 50px;
+                    }
+                    input.toggle {
+                        display: none;
+                    }
+                    .expander-content {
+                        display: none;
+                    }
+                    .toggle-label {
+                        height: 40px;
+                    }
+                    input.toggle:checked + .toggle-label + .expander-content {
+                        display: block;
+                    }
+                </style>
+            </div>
+
             <h2>Entering Mass Storage Mode</h2>
             <p>
                 To start, you will need to switch to Mass Storage Mode on your phone. Here are the steps needed in WPInternals: 
@@ -225,38 +271,68 @@
                     </figure>
                 </r-cell>
             </r-grid>
+            <div class="expander2">
+                <input id="expander2" class="toggle2" type="checkbox">
+                <label for="expander2" class="toggle-label2">
+                    <i class="ms-Icon smdl2 ms-Icon--ChevronDownMed" aria-hidden="true"></i>
+                    If you want to keep Windows 10 Mobile alongside Windows on ARM, expand this box
+                </label>
+                <div class="expander-content2">
+                    <r-grid columns=2>
+                        <r-cell span-s=row>
+                            <p>
+                                Go to the advanced tab. 
+                            </p>
+                            <p>
+                                Here, choose that you want to Keep Windows 10 Mobile (so that you will be able to use Dual
+                                Boot later).
+                            </p>
+                            <p>Choose this carefully now, because you'll have to start from scratch if you change your mind!</p>
+                            <p>When you're done, go back to the Deployment tab.</p>
+                        </r-cell>
+                        <r-cell span-s=row>
+                            <figure>
+                                <div class="img-wrapper" style="padding-bottom: 52.81%;">
+                                    <picture>
+                                        <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_keepwm.webp"
+                                            type="image/webp" />
+                                        <img class="lazyload img-fluid" loading="lazy"
+                                            src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_keepwm.png" alt="WoaDeployer advanced page" />
+                                    </picture>
+                                    <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_keepwm.png"
+                                            class="img-fluid" /></noscript>
+                                </div>
+                            </figure>
+                        </r-cell>
+                    </r-grid>
+                </div>
+                <style>
+                    .expander2 {
+                        right: 10%;
+                        background-color: #ffffff33;
+                        padding: 16px;
+                        margin-bottom: 8px;
+                        margin-top: 40px;
+                    }
+                    input.toggle2 {
+                        display: none;
+                    }
+                    .expander-content2 {
+                        display: none;
+                        padding-bottom: 40px;
+                    }
+                    .toggle-label2 {
+                        height: 40px;
+                    }
+                    input.toggle2:checked + .toggle-label2 + .expander-content2 {
+                        display: block;
+                    }
+                </style>
+            </div>
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Your interface will now display the wim file you've chosen. Next, go to the "Advanced"
-                        tab. 
-                    </p>
-                    <p>
-                        Here, choose if you want to Keep Windows 10 Mobile (so that you will be able to use Dual
-                        Boot later) or Overwrite it. Think about this now, as you will need to start from 
-                        scratch if you change idea later.
-                    </p>
-                </r-cell>
-                <r-cell span-s=row>
-                    <figure>
-                        <div class="img-wrapper" style="padding-bottom: 52.81%;">
-                            <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_keepwm.webp"
-                                    type="image/webp" />
-                                <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_keepwm.png" alt="WoaDeployer advanced page" />
-                            </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_keepwm.png"
-                                    class="img-fluid" /></noscript>
-                        </div>
-                    </figure>
-                </r-cell>
-            </r-grid>
-            <r-grid columns=2>
-                <r-cell span-s=row>
-                    <p>
-                        Now let's go back to the "Deployment" tab, and when you feel ready, press the big "Deploy"
-                        button.
+                        When you feel ready, press the big "Deploy" button.
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
