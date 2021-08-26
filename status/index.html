@@ -28,13 +28,9 @@
                 Lumia WOA Project
             </a>
             <div class="nav-links">
-
-
                 <a href="https://woa-project.github.io/LumiaWOA/">Home</a>
 
                 <a href="https://woa-project.github.io/LumiaWOA/guides/">Guides</a>
-
-                
 
                 <a class="active" href="https://woa-project.github.io/LumiaWOA/status/">Status</a>
 
@@ -47,11 +43,18 @@
         </div>
     </nav>
 
-
-
     <main aria-role="main">
         <h1 style="margin-bottom: 4rem;">Status</h1>
 
+        <h5>Jump to</h5>
+        <ul style="margin-bottom: 40px; margin-top: -10px;">
+            <li>
+                <a href="#drivers-support">Drivers Support</a>
+            </li>
+            <li>
+                <a href="#versions-support">Windows Versions Supported</a>
+            </li>
+        </ul>
 
         <div class="hero-sect grey main-breakout" style="margin-bottom: 4rem;">
             <div class="wrapper">
@@ -61,7 +64,7 @@
                 <h6>Operating System related issues</h6>
                 <p>Due to limitations on the Windows Client Operating System, Dual SIM functionality is not working.</p>
                 <p>On dual sim devices, please avoid booting with a SIM inserted in the second slot, this may cause issues that may prevent you from using Cellular even after removing the SIM.</p>
-                <p>Call functionality is not currently automatically registered on builds higher than 18363 (1909). It can however be manually registered to work on higher builds.</p>
+                <p>Call functionality is not currently automatically registered on builds higher than 18363 (1909). It can however be <a href="https://woa-project.github.io/LumiaWOA/guides/ican0/">manually registered to work on higher builds</a>.</p>
                 <p>Going to cellular advanced options on build 18363 (1909) and lower may crash the settings app. Please refer to Windows Configuration Designer documentation in order to externally provision an APN if needed.</p>
                 <p>SMS/Texts are not functional on builds higher than 18363 (1909).</p>
                 <p>MMS is not functional on any Windows version.</p>
@@ -79,6 +82,7 @@
         </div>
 
 
+        <h2 id="drivers-support">Drivers support</h2>
         <r-grid columns=2 style="padding: 0">
             <r-cell>
                 <h3 style="margin: 0;">Global Progress<span class="codename"></span></h3>
@@ -277,8 +281,8 @@
                     <td>Cellular</td>
                     <td>
                         EDGE, GSM, CDMA, HSDPA, LTE. No VoLTE support. Calls, SMS and cellular data fully working on
-                        Windows 10 build 18363 and lower. For newer versions, cellular data works only but can be tricky
-                        to activate. Dual SIM devices may require an APN to be specified.
+                        Windows 10 build 18363 and lower. For newer versions, cellular data works but can be tricky
+                        to activate. Calls require additional setup. Dual SIM devices may require an APN to be specified.
                     </td>
                     <td class="text-right">Partially working</td>
                     <td>
@@ -493,8 +497,8 @@
                     <td>Cellular</td>
                     <td>
                         EDGE, GSM, CDMA, HSDPA, LTE. No VoLTE support. Calls, SMS and cellular data fully working on
-                        Windows 10 build 18363 and lower. For newer versions, cellular data works only but can be tricky
-                        to activate. Dual SIM devices may require an APN to be specified.
+                        Windows 10 build 18363 and lower. For newer versions, cellular data works but can be tricky
+                        to activate. Calls require additional setup. Dual SIM devices may require an APN to be specified.
                     </td>
                     <td class="text-right">Partially working</td>
                     <td>
@@ -747,8 +751,8 @@
                         <td>Cellular</td>
                         <td>
                             EDGE, GSM, CDMA, HSDPA, LTE. No VoLTE support. Calls, SMS and cellular data fully working on
-                            Windows 10 build 18363 and lower. For newer versions, Cellular Data works only but can be
-                            tricky to activate. Dual SIM devices may require an APN to be specified.
+                            Windows 10 build 18363 and lower. For newer versions, cellular data works but can be tricky
+                            to activate. Calls require additional setup. Dual SIM devices may require an APN to be specified.
                         </td>
                         <td class="text-right">Partially working</td>
                         <td>
@@ -800,6 +804,110 @@
             </table>
         </div>
 
+        <h2 id="versions-support">Windows versions supported</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Windows Version</th>
+                        <th>More info</th>
+                        <th colspan="2" class="text-right">Supported</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Windows 10 Build 16299 (1709)</td>
+                        <td>Not supported, important issues present</td>
+                        <td>
+                            <td>
+                                <span class="state error"><i class="ms-Icon ms-Icon--Blocked" aria-hidden="true"></i></span>
+                            </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Windows 10 Build 17134 (1803)</td>
+                        <td>Not supported, minor issues present, not actively maintained anymore</td>
+                        <td>
+                            <td>
+                                <span class="state warning"><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i></span>
+                            </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Windows 10 Build 17763 (1809)</td>
+                        <td>Not supported, minor issues present, not actively maintained anymore</td>
+                        <td>
+                            <td>
+                                <span class="state warning"><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i></span>
+                            </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Windows 10 Build 18362 (1903)</td>
+                        <td>Not supported, minor issues present, not actively maintained anymore</td>
+                        <td>
+                            <td>
+                                <span class="state warning"><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i></span>
+                            </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Windows 10 Build 18363 (1909)</td>
+                        <td>Not supported, minor issues present, not actively maintained anymore</td>
+                        <td>
+                            <td>
+                                <span class="state warning"><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i></span>
+                            </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Windows 10 Build 19041 (2004)</td>
+                        <td>Fully supported, known issues present but nothing impactful, actively maintained</td>
+                        <td>
+                            <td>
+                                <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                            </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Windows 10 Build 19042 (20h2)</td>
+                        <td>Fully supported, known issues present but nothing impactful, actively maintained</td>
+                        <td>
+                            <td>
+                                <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                            </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Windows 10 Build 19043 (21h1)</td>
+                        <td>Fully supported, known issues present but nothing impactful, actively maintained</td>
+                        <td>
+                            <td>
+                                <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                            </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Windows 10 Build 19044 (21h2)</td>
+                        <td>Fully supported, known issues present but nothing impactful, actively maintained</td>
+                        <td>
+                            <td>
+                                <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                            </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Windows 11 Build 22000 (21h2)</td>
+                        <td>Fully supported, known issues present but nothing impactful, actively maintained</td>
+                        <td>
+                            <td>
+                                <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                            </td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
 
