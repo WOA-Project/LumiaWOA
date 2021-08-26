@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Hugo 0.69.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <title>Enable dual boot with Windows 10 Mobile</title>
+    <link rel="stylesheet"
+        href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    <link rel="stylesheet" href="https://woa-project.github.io/LumiaWOA/css/raster.grid.css" />
+    <link rel="stylesheet" href="https://woa-project.github.io/LumiaWOA/css/style.min.css" />
+    <meta name="description" content="After installing Windows On ARM with WoaDeployer, follow this guide to enable dual boot">
+    <link rel="canonical" href="https://woa-project.github.io/LumiaWOA/">
+    <meta property="og:title" content="Enable dual boot with Windows 10 Mobile" />
+    <meta property="og:description" content="After installing Windows On ARM with WoaDeployer, follow this guide to enable dual boot" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://woa-project.github.io/LumiaWOA/" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="wrapper">
+            <a href="https://woa-project.github.io/LumiaWOA/" aria-label="Homepage">
+                Lumia WOA Project
+            </a>
+            <div class="nav-links">
+
+                <a href="https://woa-project.github.io/LumiaWOA/">Home</a>
+
+                <a class="active" href="https://woa-project.github.io/LumiaWOA/guides/">Guides</a>
+
+                <a href="https://woa-project.github.io/LumiaWOA/status/">Status</a>
+
+                <a href="https://woaproject.net/">Forum</a>
+
+                <a href="https://t.me/joinchat/C-AWlUUp3wxdcLRKwNOYsA">Group</a>
+
+                <a href="https://t.me/LumiaWOA_Announcements">Channel</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <main aria-role="main">
+        <div id="hero" class="sect">
+            <div>
+                <h1>Enable dual boot with Windows 10 Mobile</h1>
+                <h4 class="secondary">After installing Windows On ARM with WoaDeployer, follow this guide to enable dual boot</h4>
+            </div>
+        </div>
+        <div class="hero-sect warning main-breakout">
+            <div class="wrapper">
+                <h3><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i>Caution</h3>
+                <h6>Bricks can happen</h6>
+                <p>
+                    This guide is an explaination of the correct steps to follow. Errors may still happen, both caused by 
+                    the user or by unpredictable conditions on your work machine. We're not resposible for any data loss,
+                    soft bricks or permanent damage on the device.
+                </p>
+            </div>
+        </div>
+        <div class="hero-sect grey main-breakout">
+            <r-grid columns=2>
+                <r-cell span-s=row>
+                    <h3>Hardware requirements</h3>
+                    <ul>
+                        <li>A PC to run WoaDeployer</li>
+                        <li>A Lumia 950 or 950 XL with Windows on ARM installed</li>
+                    </ul>
+                    <h4>Deployment requirements</h4>
+                    <ul>
+                        <li>You <strong>NEED</strong> to have installed Windows on ARM using WoaDeployer. This won't work if you used the FFU flashing method.</li>
+                        <li>You have picked "Keep Windows 10 Mobile" before deploying. If you haven't, you will have to start from scratch.</li>
+                        <li>Boot your phone to desktop at least once.</li>
+                    </ul>
+                </r-cell>
+                <r-cell span-s=row>
+                </r-cell>
+            </r-grid>
+        </div>
+        <div class="hero-sect">
+            <r-grid columns=2>
+                <r-cell span-s=row>
+                    <p>
+                        <strong>Make sure to meet all the requirements before starting.</strong>
+                    </p>
+                    <p>
+                        Reboot your phone, wait until it vibrates, then from the bootloader menu choose (using the volume 
+                        keys and the camera button to confirm):
+                    </p>
+                    <code>Developer Menu -> USB Mass Storage Mode</code>
+                    <p>Your phone will look like this:</p>
+                </r-cell>
+                <r-cell span-s=row>
+                    <figure>
+                        <div class="img-wrapper" style="padding-bottom: 52.81%;">
+                            <picture>
+                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/dualboot_1.webp"
+                                    type="image/webp" />
+                                <img class="lazyload img-fluid" loading="lazy"
+                                    src="https://woa-project.github.io/LumiaWOA/img/guides/dualboot_1.png" alt="The Phone in Mass Storage Mode" />
+                            </picture>
+                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/dualboot_1.png"
+                                    class="img-fluid" /></noscript>
+                        </div>
+                    </figure>
+                </r-cell>
+            </r-grid>
+            <r-grid columns=2>
+                <r-cell span-s=row>
+                    <p>
+                        On your PC, open WoaDeployer, then plug your phone through a USB cable.
+                    </p>
+                    <p>
+                        Navigate to the second tab of WoaDeployer, "Dual Boot".
+                    </p>
+                </r-cell>
+                <r-cell span-s=row>
+                    <figure>
+                        <div class="img-wrapper" style="padding-bottom: 52.81%;">
+                            <picture>
+                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/dualboot_2.webp"
+                                    type="image/webp" />
+                                <img class="lazyload img-fluid" loading="lazy"
+                                    src="https://woa-project.github.io/LumiaWOA/img/guides/dualboot_2.png" alt="WoaDeployer's Dual Boot page" />
+                            </picture>
+                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/dualboot_2.png"
+                                    class="img-fluid" /></noscript>
+                        </div>
+                    </figure>
+                </r-cell>
+            </r-grid>
+            <r-grid columns=2>
+                <r-cell span-s=row>
+                    <p>
+                        Click on "Check Status". If you have followed all instructions correctly, two new buttons will appear to 
+                        enable or disable dual boot.
+                    </p>
+                    <p>
+                        Click on "Enable Dual Boot", let it work until it's over, then reboot your phone by keeping the power 
+                        button pressed until it vibrates. You'll now have an option to boot Windows 10 Mobile in the bootloader!
+                    </p>
+                </r-cell>
+                <r-cell span-s=row>
+                    <figure>
+                        <div class="img-wrapper" style="padding-bottom: 52.81%;">
+                            <picture>
+                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/dualboot_3.webp"
+                                    type="image/webp" />
+                                <img class="lazyload img-fluid" loading="lazy"
+                                    src="https://woa-project.github.io/LumiaWOA/img/guides/dualboot_3.png" alt="WoaDeployer's Dual Boot page with the options" />
+                            </picture>
+                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/dualboot_3.png"
+                                    class="img-fluid" /></noscript>
+                        </div>
+                    </figure>
+                </r-cell>
+            </r-grid>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="wrapper caption secondary">
+            <p>© 2017-2021 The Lumia WOA Authors</p>
+            <p>Snapdragon is a registered trademark of Qualcomm Incorporated. Microsoft, the Microsoft Corporate Logo,
+                Windows, Lumia, Windows Hello, Continuum, Hyper-V, and DirectX are registered trademarks of Microsoft
+                Corporation in the United States. Miracast is a registered trademark of the Wi-Fi Alliance. Other
+                binaries may be copyright Qualcomm Incorporated and Microsoft Mobile.</p>
+            <p>Hello from San Francisco (US), France, Italy, Germany, Spain, Hungary. Site built by @itsmichaelwest.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://woa-project.github.io/LumiaWOA/js/site.min.js"></script>
+</body>
+
+</html>
