@@ -218,7 +218,7 @@
                         Mount the ISO, or use 7zip or any tool capable of exploring these files, and open the ISO file we
                         just downloaded. You'll find the "install.wim" file under the "sources" folder.
                     </p>
-                    <p>Copy it outside, in any folder, and we're done!</p>
+                    <p>Copy it outside, in any folder, and we're almost done!</p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
@@ -230,6 +230,40 @@
                                     src="https://woa-project.github.io/LumiaWOA/img/guides/uup_dump_wim.png" alt="the install.wim file" />
                             </picture>
                             <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/uup_dump_wim.png"
+                                    class="img-fluid" /></noscript>
+                        </div>
+                    </figure>
+                </r-cell>
+            </r-grid>
+        </div>
+        <div class="hero-sect grey main-breakout">
+            <r-grid columns=2>
+                <r-cell span-s=row>
+                    <h2>Part 4: Converting the WIM</h2>
+                    <p>
+                        There are issues with unofficial install.WIM files made using UUPdump (and possibly other) conversion websites.
+                        In return, after adding .WIM file in WOA-Deployer, it will report an error "Invalid WIM file".
+                    </p>
+                    <p>
+                        To fix this issue, open terminal on Windows with administrator rights and execute this command to convert .WIM file:
+                    </p>
+                    <code>
+                        DISM /Export-Image /SourceImageFile:[original install.wim location] /SourceIndex:1 /DestinationImageFile:[new install.wim location] /CheckIntegrity
+                    </code>
+                    <p>
+                        You will find your new .WIM file in the destination directory you specified, now you can use this file for WOA-Deployer.
+                    </p>
+                </r-cell>
+                <r-cell span-s=row>
+                    <figure>
+                        <div class="img-wrapper" style="padding-bottom: 52.81%;">
+                            <picture>
+                                <source srcset="../../img/guides/dism_wim_convert.webp"
+                                    type="image/webp" />
+                                <img class="lazyload img-fluid" loading="lazy"
+                                    src="../../img/guides/dism_wim_convert.png" alt="example of DISM .wim file convert" />
+                            </picture>
+                            <noscript><img src="../../img/guides/dism_wim_convert.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
